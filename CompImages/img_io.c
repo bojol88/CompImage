@@ -16,14 +16,14 @@ read_pgm(int* w, int* h, const char * filename){
     
     in_file = fopen(filename, "rb");
     if (! in_file){
-        fprintf(stderr, "ERROR(0): Fail to open file %s\n", filename);
-        exit(1);
+		fprintf(stderr, "ERROR(0): Fail to open file %s\n", filename);
+        return NULL;
     }
     /* Determine pgm image type (only type three can be used)*/
     ch = getc(in_file);
     if(ch != 'P'){
-        printf("ERROR(1): Not valid pgm/ppm file type\n");
-        exit(1);
+		printf("ERROR(1): Not valid pgm/ppm file type\n");
+		return NULL;
     }
     ch = getc(in_file);
     /* Convert the one digit integer currently represented as a character to
@@ -31,8 +31,8 @@ read_pgm(int* w, int* h, const char * filename){
     type = ch - 48;
     if(type != 6)
     {
-        printf("ERROR(2): this file type (P%d) is not supported!\n", type);
-        exit(1);
+		printf("ERROR(2): this file type (P%d) is not supported!\n", type);
+		return NULL;
     }
     while(getc(in_file) != '\n');      /* Skip to end of line*/
     while (getc(in_file) == '#'){       /* Skip comment lines */

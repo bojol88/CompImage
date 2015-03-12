@@ -28,19 +28,24 @@ int main(int argc, char* argv[]) {
 		if (xsize != 352 || ysize != 288) 
 		{
 			fprintf(stderr,"Only CIF pictures are supported\n");
-			exit(1);
+			break;
 		}
-		assert(in_img != NULL);
-
+		if (in_img == NULL)
+		{
+			break;
+		}
 		// Ouverture de l'image de référence
 		sprintf(nom_fichier, "References/%d.pgm", i);
 		in_ref = read_pgm(&xsize_r, &ysize_r, nom_fichier);
 		if (xsize_r != 352 || ysize_r != 288)
 		{
 			fprintf(stderr, "Only CIF pictures are supported\n");
-			exit(1);
+			break;
 		}
-		assert(in_img != NULL);
+		if (in_ref == NULL)
+		{
+			break;
+		}
 		
 		// Comparaison des fichiers
 
