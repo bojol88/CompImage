@@ -39,7 +39,5 @@
 *.suo
 
 # Folders
-CompImages/Debug/*
-Debug/*
-data/*
-qtcreator/*
+CompImages/Debug/*.*
+Debug/*.*
