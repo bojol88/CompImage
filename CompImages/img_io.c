@@ -29,7 +29,7 @@ read_pgm(int* w, int* h, const char * filename){
     /* Convert the one digit integer currently represented as a character to
      * an integer(48 == '0') */
     type = ch - 48;
-    if(type != 6)
+	if (type != 6 && type != 5)
     {
 		printf("ERROR(2): this file type (P%d) is not supported!\n", type);
 		return NULL;

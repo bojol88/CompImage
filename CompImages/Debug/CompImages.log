@@ -1,11 +1,11 @@
-﻿La génération a démarré 07/03/2015 16:18:05.
+﻿La génération a démarré 23/04/2015 16:39:25.
      1>Projet "D:\Mes Documents\Cours\ECOLE D'ING. INSA EII\4ème Année\Semestre 8\Projet recherche\Git\Mon_Git\CompImages\CompImages\CompImages.vcxproj" sur le nœud 2 (Build cible(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt main.c
          main.c
      1>d:\mes documents\cours\ecole d'ing. insa eii\4ème année\semestre 8\projet recherche\git\mon_git\compimages\compimages\main.c(26): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(356) : voir la déclaration de 'sprintf'
-     1>d:\mes documents\cours\ecole d'ing. insa eii\4ème année\semestre 8\projet recherche\git\mon_git\compimages\compimages\main.c(36): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>d:\mes documents\cours\ecole d'ing. insa eii\4ème année\semestre 8\projet recherche\git\mon_git\compimages\compimages\main.c(34): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(356) : voir la déclaration de 'sprintf'
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Mes Documents\Cours\ECOLE D'ING. INSA EII\4ème Année\Semestre 8\Projet recherche\Git\Mon_Git\CompImages\Debug\CompImages.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Mes Documents\Cours\ECOLE D'ING. INSA EII\4ème Année\Semestre 8\Projet recherche\Git\Mon_Git\CompImages\Debug\CompImages.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Mes Documents\Cours\ECOLE D'ING. INSA EII\4ème Année\Semestre 8\Projet recherche\Git\Mon_Git\CompImages\Debug\CompImages.lib" /MACHINE:X86 Debug\img_io.obj
@@ -15,4 +15,4 @@
 
 La génération a réussi.
 
-Temps écoulé 00:00:00.67
+Temps écoulé 00:00:01.93
